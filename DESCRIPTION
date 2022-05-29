@@ -17,3 +17,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 URL: https://github.com/ijlyttle/btt22
 BugReports: https://github.com/ijlyttle/btt22/issues
+Imports: 
+    usethis
