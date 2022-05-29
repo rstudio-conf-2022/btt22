@@ -4,6 +4,8 @@
 # btt22
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/ijlyttle/btt22/workflows/R-CMD-check/badge.svg)](https://github.com/ijlyttle/btt22/actions)
 <!-- badges: end -->
 
 The goal of btt22 is to help you build the
