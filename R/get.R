@@ -19,6 +19,9 @@ btt_get <- function(state) {
   old_branch <- gert::git_branch(repo = path_repo())
   gert::git_branch_checkout(state, repo = path_repo())
 
+  # get R files
+
+  # get testthat files
 
   cli::cli_alert_success("Copied template-files for state {.val {state}}.")
 
