@@ -40,3 +40,22 @@ validate_ussie <- function() {
 
   invisible(root)
 }
+
+validate_state <- function(state) {
+  states_available <- btt_state()
+  if (!state %in% states_available) {
+    cli::cli_abort(
+      c(
+        "State requested is not available.",
+        i = "State requested: {.val {state}}",
+        i = "States available: {.val {states_available}}"
+      ),
+      class = "btt22_state",
+      state = state,
+      states_available = states_available,
+      call = rlang::caller_env()
+    )
+  }
+
+  invisible(state)
+}
