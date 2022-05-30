@@ -24,7 +24,8 @@ Imports:
     gert,
     rlang,
     rprojroot,
-    utils
+    utils,
+    yesno
 Suggests: 
     knitr,
     rmarkdown,
