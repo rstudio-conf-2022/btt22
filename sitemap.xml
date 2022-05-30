@@ -28,6 +28,12 @@
     <loc>/news/index.html</loc>
   </url>
   <url>
+    <loc>/reference/btt_reset.html</loc>
+  </url>
+  <url>
+    <loc>/reference/btt_state.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
   </url>
 </urlset>
