@@ -1,0 +1,21 @@
+---
+title: "Guide for instructors"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Guide for instructors}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(btt22)
+```
+
+Eventually, I'll put a how-to for instructors here.
