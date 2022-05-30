@@ -1,5 +1,13 @@
 # btt22 0.0.0.9000
 
+* Added function to reset state of ussie, `btt_reset()`. (#5)
+
+  - Must be run from directory within an R package called **ussie**.
+  - Given a `state` (get available states using `btt_state()`), completely overwrites:
+    - `R` directory
+    - `tests` directory
+    - `Imports` and `Suggests` fields in `DESCRIPTION` file
+
 * Automatic loading and unloading of ussie repo. (#3)
 
   - Added `.onLoad()`, `.unLoad()` functions so that ussie repo placed a temporary directory.
