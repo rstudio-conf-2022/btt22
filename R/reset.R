@@ -13,7 +13,7 @@
 #'
 #' @return `state`, invisibly.
 #' @examples \dontrun{
-#' btt_state("2.1.1")
+#' btt_reset("2.1.1")
 #' }
 #' @export
 #'

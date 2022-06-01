@@ -1,3 +1,16 @@
+#' Get new files for a given state
+#'
+#' This function add new files to
+#' - your `R` directory.
+#' - your `tests` directory.
+#'
+#' @inherit btt_reset params return
+#'
+#' @examples \dontrun{
+#' btt_get("2.1.2")
+#' }
+#' @export
+#'
 btt_get <- function(state) {
 
   # validate
@@ -20,8 +33,18 @@ btt_get <- function(state) {
   gert::git_branch_checkout(state, repo = path_repo())
 
   # get R files
+  fs::dir_copy(
+    fs::path(path_repo(), "inst/template/R"),
+    root$find_file("R"),
+    overwrite = TRUE
+  )
 
   # get testthat files
+  fs::dir_copy(
+    fs::path(path_repo(), "inst/template/testthat"),
+    root$find_file("tests/testthat"),
+    overwrite = TRUE
+  )
 
   cli::cli_alert_success("Copied template-files for state {.val {state}}.")
 
