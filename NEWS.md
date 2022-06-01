@@ -1,5 +1,9 @@
 # btt22 0.0.0.9000
 
+* Added function to get new files for state of ussie, `btt_get()`. (#7)
+
+  - Must be run from directory within an R package called **ussie**.
+
 * Added function to reset state of ussie, `btt_reset()`. (#5)
 
   - Must be run from directory within an R package called **ussie**.

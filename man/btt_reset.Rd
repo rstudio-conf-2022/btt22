@@ -27,6 +27,6 @@ you from accidentially blowing away your work in a different project.
 }
 \examples{
 \dontrun{
-btt_state("2.1.1")
+btt_reset("2.1.1")
 }
 }

@@ -13,7 +13,7 @@
 #'
 #' @return `state`, invisibly.
 #' @examples \dontrun{
-#' btt_state("2.1.1")
+#' btt_reset("2.1.1")
 #' }
 #' @export
 #'
@@ -33,8 +33,8 @@ btt_reset <- function(state) {
 
   proceed <- yesno::yesno("Proceed?")
   if (!proceed) {
-    cli::cli_alert_danger("Reset aborted.")
-    return(invisible(NULL))
+    cli::cli_alert_danger("Reset has been aborted.")
+    return(invisible(state))
   }
 
   # check out branch
