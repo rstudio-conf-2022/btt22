@@ -13,11 +13,11 @@
 #'
 #' @return `state`, invisibly.
 #' @examples \dontrun{
-#' btt_reset("2.1.1")
+#' btt_reset_hard("2.1.1")
 #' }
 #' @export
 #'
-btt_reset <- function(state) {
+btt_reset_hard <- function(state) {
 
   # validate
   root <- validate_ussie()
