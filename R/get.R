@@ -4,7 +4,7 @@
 #' - your `R` directory.
 #' - your `tests` directory.
 #'
-#' @inherit btt_reset params return
+#' @inherit btt_reset_hard params return
 #'
 #' @examples \dontrun{
 #' btt_get("2.1.2")
