@@ -18,8 +18,8 @@ package called {ussie}, and populate it with functions.
 
 There are two big purposes for this package:
 
--   if you install this package, and update all of its dependencies, you
-    will have all the packages you need for this course.
+-   if you install this package, you will have all the packages you need
+    for this course.
 -   you can use the functions from this package to import code:
     -   `btt_state()`: list all the available states. A state has an
         identifier like `"2.1.1"`: day `2`, session `1`, task `1`. This

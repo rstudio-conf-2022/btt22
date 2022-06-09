@@ -1,5 +1,7 @@
 # btt22 0.0.0.9000
 
+* Imports {devtools}, {diffviewer}, {dplyr}, {engsoccerdata}, {ggplot2}, and {shiny}, so that installing this package will get you all the packages you will need for the course. (#15)
+
 * Renamed `btt_reset()` to `btt_reset_hard()`. (#12)
 
 * Added function to get new files for state of ussie, `btt_get()`. (#7)

@@ -20,10 +20,16 @@ BugReports: https://github.com/ijlyttle/btt22/issues
 Imports: 
     cli,
     desc,
+    devtools (>= 2.4.3),
+    diffviewer (>= 0.1.1),
+    dplyr (>= 1.0.9),
+    engsoccerdata (>= 0.1.5),
     fs,
     gert,
+    ggplot2 (>= 3.3.6),
     rlang,
     rprojroot,
+    shiny (>= 1.7.1),
     utils,
     yesno
 Suggests: 
