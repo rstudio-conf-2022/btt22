@@ -3,6 +3,7 @@ path_ussie <- NULL
 
 .onLoad <- function(libname, pkgname) {
 
+  # when local source is enabled, use it as default
   source <- getOption("btt22.source") %||% "remote"
 
   # make sure path is empty
