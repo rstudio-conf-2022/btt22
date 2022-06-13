@@ -14,7 +14,7 @@
 btt_get <- function(state) {
 
   # validate
-  root <- validate_ussie()
+  root <- validate_package_name("ussie")
   state <- validate_state(state)
 
   cli::cli_alert_warning("This will copy new files into:")
