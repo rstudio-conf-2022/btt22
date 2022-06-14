@@ -2,7 +2,7 @@
 #'
 #' @noRd
 #'
-btt_update <- function() {
+btt_update_ussie <- function() {
 
   # validate
   root <- validate_package_name("btt22")
@@ -19,6 +19,8 @@ btt_update <- function() {
 
   withr::local_dir(path_temp)
   zip::zip(zip_file, files = fs::dir_ls(all = TRUE))
+
+  cli::cli_alert_success("New ussie repo at {.file {zip_file}}")
 
   invisible(NULL)
 }
