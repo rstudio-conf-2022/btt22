@@ -1,8 +1,8 @@
 pandoc: 2.14.2
-pkgdown: 2.0.3
+pkgdown: 2.0.4
 pkgdown_sha: ~
 articles:
   btt22: btt22.html
   instructors: instructors.html
-last_built: 2022-06-09T21:31Z
+last_built: 2022-06-14T23:18Z
 
