@@ -3,15 +3,26 @@ path_ussie <- NULL
 
 .onLoad <- function(libname, pkgname) {
 
+  source <- getOption("btt22.source") %||% "local"
+
   # make sure path is empty
   path_temp <- fs::path_temp("ussie")
   if (fs::dir_exists(path_temp)) {
     fs::dir_delete(path_temp)
   }
 
-  # idea - when we get close, put a tar.gz copy of ussie into `inst` so that
-  # we can run locally if need be.
-  gert::git_clone("https://github.com/ijlyttle/ussie", path = path_temp)
+  if (identical(source, "remote")) {
+    cli::cli_inform(
+      c(i = "Retrieving ussie repo from remote source: {.url {url_ussie()}}")
+    )
+    gert::git_clone(url_ussie(), path = path_temp)
+  } else {
+    # use local copy of ussie
+    zip::unzip(
+      zipfile = system.file("ussie-repo/ussie.zip", package = "btt22"),
+      exdir = path_temp
+    )
+  }
 
   path_ussie <<- path_temp
 }
