@@ -17,10 +17,20 @@ btt_update_ussie <- function() {
 
   zip_file <- root$find_file("inst/ussie-repo/ussie.zip")
 
-  withr::local_dir(path_temp)
-  zip::zip(zip_file, files = fs::dir_ls(all = TRUE))
+  withr::with_dir(
+    path_temp,
+    zip::zip(zip_file, files = fs::dir_ls(all = TRUE))
+  )
 
   cli::cli_alert_success("New ussie repo at {.file {zip_file}}")
+
+  suppressMessages(
+    desc <- desc::desc_bump_version("patch")
+  )
+
+  cli::cli_alert_success(
+    "Bumped version of btt22 to {.val {desc$get_version()}}"
+  )
 
   invisible(NULL)
 }

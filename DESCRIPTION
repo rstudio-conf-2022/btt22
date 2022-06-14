@@ -30,7 +30,6 @@ Imports:
     rlang,
     rprojroot,
     shiny (>= 1.7.1),
-    usethis,
     utils,
     withr,
     yesno,
