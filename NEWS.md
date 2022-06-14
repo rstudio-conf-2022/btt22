@@ -4,7 +4,7 @@
 
   - Added option `"btt22.source"` to use `"local"` (default) or `"remote"` source for {ussie}. 
   - For instructors, added unexported function, `btt_update_ussie()`:
-    - puts latest copy of ussie repo, as a `.zip` file, into `/inst/ussie-repo`
+    - puts latest copy of ussie repo, as a `.zip` file, into `/inst/ussie-repo/`
     - bumps the (patch) version of this package
 
 * Imports {devtools}, {diffviewer}, {dplyr}, {engsoccerdata}, {ggplot2}, and {shiny}, so that installing this package will get you all the packages you will need for the course. (#15)
