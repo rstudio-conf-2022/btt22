@@ -1,7 +1,5 @@
 # btt22 0.0.1
 
-# btt22 0.0.0.9000
-
 * Added option `"btt22.source"` to use `"local"` (default) or `"remote"` source for {ussie}. (#11)
 
 * Imports {devtools}, {diffviewer}, {dplyr}, {engsoccerdata}, {ggplot2}, and {shiny}, so that installing this package will get you all the packages you will need for the course. (#15)
