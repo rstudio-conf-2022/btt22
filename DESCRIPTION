@@ -31,7 +31,9 @@ Imports:
     rprojroot,
     shiny (>= 1.7.1),
     utils,
-    yesno
+    withr,
+    yesno,
+    zip
 Suggests: 
     knitr,
     rmarkdown,

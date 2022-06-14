@@ -1,3 +1,7 @@
+url_ussie <- function() {
+  "https://github.com/rstudio-conf-2022/ussie"
+}
+
 #' @keywords internal
 "_PACKAGE"
 
