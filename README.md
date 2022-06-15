@@ -5,12 +5,12 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/ijlyttle/btt22/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ijlyttle/btt22/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/rstudio-conf-2022/btt22/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rstudio-conf-2022/btt22/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of btt22 is to help you build the
-[**ussie**](https://github.com/ijlyttle/ussie) package during the
-[Building Tidy Tools
+[**ussie**](https://github.com/rstudio-conf-2022/ussie) package during
+the [Building Tidy Tools
 2022](https://github.com/rstudio-conf-2022/build-tidy-tools) workshop.
 
 The central project for this course is that each student will build a
@@ -24,7 +24,7 @@ There are two big purposes for this package:
     -   `btt_state()`: list all the available states. A state has an
         identifier like `"2.1.1"`: day `2`, session `1`, task `1`. This
         identifier corresponds to a [branch in the {ussie}
-        repository](https://github.com/ijlyttle/ussie/branches).
+        repository](https://github.com/rstudio-conf-2022/ussie/branches).
     -   `btt_get(state)`:
         -   gets the skeleton code to be used for the given `state`
         -   puts it into your package’s `R` folder or `tests/testthat`
@@ -42,18 +42,18 @@ You can install the development version of btt22 like so:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("ijlyttle/btt22")
+devtools::install_github("rstudio-conf-2022/btt22")
 ```
 
 ## Examples
 
-Here’s how to get the available states (there will be more states
-available soon!):
+Here’s how to get the available states:
 
 ``` r
 library(btt22)
 btt_state()
-#> [1] "2.1.1" "2.1.2" "2.2.1"
+#>  [1] "2.1.1" "2.1.2" "2.2.1" "2.2.2" "2.2.3" "2.3.1" "2.3.2" "2.3.3" "2.3.4"
+#> [10] "2.3.5" "2.3.6" "2.3.7" "2.4.1" "2.4.2" "2.4.3"
 ```
 
 Let’s say we are at the start of the second session of day 2 - this
