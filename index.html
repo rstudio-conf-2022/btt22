@@ -40,16 +40,7 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
-  <a class="nav-link" href="articles/btt22.html">Get started</a>
-</li>
-<li class="nav-item">
   <a class="nav-link" href="reference/index.html">Reference</a>
-</li>
-<li class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="articles/instructors.html">Guide for instructors</a>
-  </div>
 </li>
 <li class="nav-item">
   <a class="nav-link" href="news/index.html">Changelog</a>
@@ -61,7 +52,7 @@
 
       <ul class="navbar-nav">
 <li class="nav-item">
-  <a class="external-link nav-link" href="https://github.com/ijlyttle/btt22/" aria-label="github">
+  <a class="external-link nav-link" href="https://github.com/rstudio-conf-2022/btt22/" aria-label="github">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -77,14 +68,14 @@
 <div class="page-header"><h1 id="btt22">btt22<a class="anchor" aria-label="anchor" href="#btt22"></a>
 </h1></div>
 <!-- badges: start -->
-<p>The goal of btt22 is to help you build the <a href="https://github.com/ijlyttle/ussie" class="external-link"><strong>ussie</strong></a> package during the <a href="https://github.com/rstudio-conf-2022/build-tidy-tools" class="external-link">Building Tidy Tools 2022</a> workshop.</p>
+<p>The goal of btt22 is to help you build the <a href="https://github.com/rstudio-conf-2022/ussie" class="external-link"><strong>ussie</strong></a> package during the <a href="https://github.com/rstudio-conf-2022/build-tidy-tools" class="external-link">Building Tidy Tools 2022</a> workshop.</p>
 <p>The central project for this course is that each student will build a package called {ussie}, and populate it with functions.</p>
 <p>There are two big purposes for this package:</p>
 <ul>
 <li>if you install this package, you will have all the packages you need for this course.</li>
 <li>you can use the functions from this package to import code:<ul>
 <li>
-<code><a href="reference/btt_state.html">btt_state()</a></code>: list all the available states. A state has an identifier like <code>"2.1.1"</code>: day <code>2</code>, session <code>1</code>, task <code>1</code>. This identifier corresponds to a <a href="https://github.com/ijlyttle/ussie/branches" class="external-link">branch in the {ussie} repository</a>.</li>
+<code><a href="reference/btt_state.html">btt_state()</a></code>: list all the available states. A state has an identifier like <code>"2.1.1"</code>: day <code>2</code>, session <code>1</code>, task <code>1</code>. This identifier corresponds to a <a href="https://github.com/rstudio-conf-2022/ussie/branches" class="external-link">branch in the {ussie} repository</a>.</li>
 <li>
 <code>btt_get(state)</code>:<ul>
 <li>gets the skeleton code to be used for the given <code>state</code>
@@ -111,16 +102,17 @@
 <p>You can install the development version of btt22 like so:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># install.packages("devtools")</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"ijlyttle/btt22"</span><span class="op">)</span></code></pre></div>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rstudio-conf-2022/btt22"</span><span class="op">)</span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
 </h2>
-<p>Here’s how to get the available states (there will be more states available soon!):</p>
+<p>Here’s how to get the available states:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ijlyttle/btt22" class="external-link">btt22</a></span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/rstudio-conf-2022/btt22" class="external-link">btt22</a></span><span class="op">)</span>
 <span class="fu"><a href="reference/btt_state.html">btt_state</a></span><span class="op">(</span><span class="op">)</span>
-<span class="co">#&gt; [1] "2.1.1" "2.1.2" "2.2.1"</span></code></pre></div>
+<span class="co">#&gt;  [1] "2.1.1" "2.1.2" "2.2.1" "2.2.2" "2.2.3" "2.3.1" "2.3.2" "2.3.3" "2.3.4"</span>
+<span class="co">#&gt; [10] "2.3.5" "2.3.6" "2.3.7" "2.4.1" "2.4.2" "2.4.3"</span></code></pre></div>
 <p>Let’s say we are at the start of the second session of day 2 - this corresponds to state <code>"2.2.1"</code>.</p>
 <p>Let’s say that you, dear student, are on the happy path. In this case, to get the templated code for this task, you would:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
@@ -139,8 +131,8 @@
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/ijlyttle/btt22/" class="external-link">Browse source code</a></li>
-<li><a href="https://github.com/ijlyttle/btt22/issues" class="external-link">Report a bug</a></li>
+<li><a href="https://github.com/rstudio-conf-2022/btt22/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/rstudio-conf-2022/btt22/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
@@ -171,7 +163,7 @@
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/ijlyttle/btt22/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/ijlyttle/btt22/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://github.com/rstudio-conf-2022/btt22/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/rstudio-conf-2022/btt22/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 </ul>
 </div>
 
