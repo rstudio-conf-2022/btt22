@@ -4,10 +4,13 @@
 \alias{btt_get}
 \title{Get new files for a given state}
 \usage{
-btt_get(state)
+btt_get(state, open = rlang::is_interactive())
 }
 \arguments{
 \item{state}{\code{character}, use \code{\link[=btt_state]{btt_state()}} to see available states.}
+
+\item{open}{\code{logical} specifies if new files are opened for interactive
+editing}
 }
 \value{
 \code{state}, invisibly.
