@@ -13,14 +13,16 @@ btt_get(state, open = rlang::is_interactive())
 editing}
 }
 \value{
-\code{state}, invisibly.
+\code{state}, invisibly; called for side effects.
 }
 \description{
-This function add new files to
+This function adds new files to:
 \itemize{
-\item your \code{R} directory.
-\item your \code{tests} directory.
+\item your \code{R} directory
+\item your \code{testthat/tests} directory
 }
+
+If \code{open} is \code{TRUE}, it will open the new files for editing.
 }
 \examples{
 \dontrun{

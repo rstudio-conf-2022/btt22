@@ -1,5 +1,10 @@
 # btt22 0.0.1
 
+* Improved user-interface to `btt_get()`. (#17)
+
+  - Lists files to be copied into the package directory.
+  - Opens the files for interactive editing (use `open` argument to change).
+
 * Updated to reflect new home at rstudio-conf-2022. 
   Removed vignettes, as we can handle everything in the README. (#1, #4)
 
