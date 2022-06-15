@@ -45,7 +45,7 @@ btt_get <- function(state, open = rlang::is_interactive()) {
     return(invisible(state))
   }
 
-  # TODO: list files to be copied
+  # list files to be copied
   cli::cli_alert_warning(
     "State {.val {state}} will copy files to your package:"
   )
