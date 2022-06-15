@@ -1,5 +1,8 @@
 # btt22 0.0.1
 
+* Updated to reflect new home at rstudio-conf-2022. 
+  Removed vignettes, as we can handle everything in the README. (#1, #4)
+
 * This package keeps a copy of the {ussie} repo. (#11)
 
   - Added option `"btt22.source"` to use `"local"` (default) or `"remote"` source for {ussie}. 

@@ -11,8 +11,8 @@ This package is designed to help you build the "ussie" package. At its core, it 
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/ijlyttle/btt22}
-  \item Report bugs at \url{https://github.com/ijlyttle/btt22/issues}
+  \item \url{https://github.com/rstudio-conf-2022/btt22}
+  \item Report bugs at \url{https://github.com/rstudio-conf-2022/btt22/issues}
 }
 
 }
