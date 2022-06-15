@@ -1,3 +1,12 @@
+# btt22 0.0.2
+
+* Improved user-interface to `btt_get()`. (#17)
+
+  - Lists files to be copied into the package directory.
+  - Opens the files for interactive editing (use `open` argument to change).
+  - Uses updated structure for template files in {ussie}; old version of {btt22}
+    will not work with new version of {ussie}.
+
 # btt22 0.0.1
 
 * Updated to reflect new home at rstudio-conf-2022. 
