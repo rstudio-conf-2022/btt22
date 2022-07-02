@@ -7,6 +7,7 @@ gratuitous_references <- function() {
   dplyr::mutate
   engsoccerdata::bestwins
   ggplot2::ggplot
+  palmerpenguins::penguins
   shiny::h1
 
   invisible(NULL)

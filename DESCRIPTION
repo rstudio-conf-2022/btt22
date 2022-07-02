@@ -1,6 +1,6 @@
 Package: btt22
 Title: Templating functions for "Building Tidy Tools 2022"
-Version: 0.0.4
+Version: 0.0.4.1
 Authors@R: 
   c(
     person("Ian", "Lyttle", , "ijlyttle@me.com", role = c("aut", "cre"),
@@ -27,6 +27,7 @@ Imports:
     fs,
     gert,
     ggplot2 (>= 3.3.6),
+    palmerpenguins,
     purrr,
     rlang,
     rprojroot,
