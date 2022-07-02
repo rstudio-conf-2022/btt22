@@ -30,7 +30,7 @@
     
     <a class="navbar-brand me-2" href="index.html">btt22</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.4.1</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,25 +101,25 @@
 </h2>
 <p>You can install the development version of btt22 like so:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># install.packages("devtools")</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rstudio-conf-2022/btt22"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rstudio-conf-2022/btt22"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
 </h2>
 <p>Here’s how to get the available states:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/rstudio-conf-2022/btt22" class="external-link">btt22</a></span><span class="op">)</span>
-<span class="fu"><a href="reference/btt_state.html">btt_state</a></span><span class="op">(</span><span class="op">)</span>
-<span class="co">#&gt;  [1] "2.1.1" "2.1.2" "2.2.1" "2.2.2" "2.2.3" "2.3.1" "2.3.2" "2.3.3" "2.3.4"</span>
-<span class="co">#&gt; [10] "2.3.5" "2.3.6" "2.3.7" "2.4.1" "2.4.2" "2.4.3"</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/rstudio-conf-2022/btt22" class="external-link">btt22</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/btt_state.html">btt_state</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt;  [1] "2.1.1" "2.1.2" "2.2.1" "2.2.2" "2.2.3" "2.3.1" "2.3.2" "2.3.3" "2.3.4"</span></span>
+<span><span class="co">#&gt; [10] "2.3.5" "2.3.6" "2.3.7" "2.4.1" "2.4.2" "2.4.3"</span></span></code></pre></div>
 <p>Let’s say we are at the start of the second session of day 2 - this corresponds to state <code>"2.2.1"</code>.</p>
 <p>Let’s say that you, dear student, are on the happy path. In this case, to get the templated code for this task, you would:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="reference/btt_get.html">btt_get</a></span><span class="op">(</span><span class="st">"2.2.1"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/btt_get.html">btt_get</a></span><span class="op">(</span><span class="st">"2.2.1"</span><span class="op">)</span></span></code></pre></div>
 <p>Let’s say that you are <em>not</em> on the happy path and that the best course of action is just to catch-up. In this case, to get the completed code, you would:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="reference/btt_reset_hard.html">btt_reset_hard</a></span><span class="op">(</span><span class="st">"2.2.1"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/btt_reset_hard.html">btt_reset_hard</a></span><span class="op">(</span><span class="st">"2.2.1"</span><span class="op">)</span></span></code></pre></div>
 <p>Then you could use <code>btt_get("2.2.1")</code> to get the templated code beacuse you would now be on the the happy path.</p>
 <p>To avoid inadvertent chaos, <code><a href="reference/btt_get.html">btt_get()</a></code> and <code><a href="reference/btt_reset_hard.html">btt_reset_hard()</a></code> make a couple of checks before it writes anything to your project:</p>
 <ul>
