@@ -1,5 +1,7 @@
 # btt22 0.0.2
 
+* Added {palmerpenguins}. (#22)
+
 * Improved user-interface to `btt_get()`. (#17)
 
   - Lists files to be copied into the package directory.
