@@ -1,6 +1,6 @@
 Package: btt22
 Title: Templating functions for "Building Tidy Tools 2022"
-Version: 0.0.4.1
+Version: 0.0.5
 Authors@R: 
   c(
     person("Ian", "Lyttle", , "ijlyttle@me.com", role = c("aut", "cre"),
