@@ -3,4 +3,5 @@
 export(btt_get)
 export(btt_reset_hard)
 export(btt_state)
+importFrom(magrittr,"%>%")
 importFrom(rlang,"%||%")

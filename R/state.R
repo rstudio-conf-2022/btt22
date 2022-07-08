@@ -15,9 +15,9 @@ btt_state <- function(pattern = "^[12]\\.") {
   branch_list <-  gert::git_branch_list(repo = path_repo())
 
   candidates <-
-    branch_list$name |>
-    strsplit("/") |>                      # split (used for remotes)
-    vapply(\(x) utils::tail(x, 1), "") |> # get last entry for each
+    branch_list$name %>%
+    strsplit("/") %>%                      # split (used for remotes)
+    vapply(\(x) utils::tail(x, 1), "") %>% # get last entry for each
     unique()
 
   # return only those candidates that satisfy the regex

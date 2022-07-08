@@ -7,5 +7,6 @@ url_ussie <- function() {
 
 ## usethis namespace: start
 #' @importFrom rlang %||%
+#' @importFrom magrittr %>%
 ## usethis namespace: end
 NULL
