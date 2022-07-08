@@ -9,6 +9,10 @@ gratuitous_references <- function() {
   ggplot2::ggplot
   palmerpenguins::penguins
   shiny::h1
+  pkgdown::build_site
+  knitr::knit
+  rmarkdown::render
+  cffr::cff_write
 
   invisible(NULL)
 }
