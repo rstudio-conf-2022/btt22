@@ -1,3 +1,7 @@
+# btt22 0.0.7
+
+* Add more packages to imports, so that they will be installed automatically. (#25)
+
 # btt22 0.0.6
 
 * Remove base pipe so that folks with R v3 can still use. 
