@@ -58,6 +58,11 @@ btt_reset_hard <- function(state) {
     normalize = TRUE
   )
 
+  if (!has_base_pipe()) {
+    usethis::use_package("magrittr")
+    usethis::use_import_from("magrittr", "%>%")
+  }
+
   cli::cli_alert_success("Updated to state {.val {state}}.")
 
   # restore old branch

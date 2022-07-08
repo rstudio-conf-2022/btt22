@@ -24,9 +24,30 @@ path_ussie <- NULL
     )
   }
 
+  if (!has_base_pipe()) {
+    message_base_pipe()
+  }
+
   path_ussie <<- path_temp
 }
 
 .onUnload <- function(libpath) {
   fs::dir_delete(path_repo())
+}
+
+has_base_pipe <- function() {
+
+  version <- as.character(utils::packageVersion("base"))
+
+  utils::compareVersion(version, "4.1.0") >= 0
+}
+
+message_base_pipe <- function() {
+  cli::cli_alert_warning(
+    "Your version of R does not have the base pipe: {.code |>}"
+  )
+
+  cli::cli_alert_info(
+    "Replace all instances of {.code |>} with {.code %>%}"
+  )
 }

@@ -1,3 +1,8 @@
+# btt22 0.0.6
+
+* Remove base pipe so that folks with R v3 can still use. 
+  Generates startup message in case base pipe is not available. (#24)
+
 # btt22 0.0.5
 
 * Various updates to ussie repo.

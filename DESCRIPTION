@@ -1,6 +1,6 @@
 Package: btt22
 Title: Templating functions for "Building Tidy Tools 2022"
-Version: 0.0.5
+Version: 0.0.6
 Authors@R: 
   c(
     person("Ian", "Lyttle", , "ijlyttle@me.com", role = c("aut", "cre"),
@@ -14,7 +14,7 @@ Description: This package is designed to help you build the "ussie" package.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 URL: https://github.com/rstudio-conf-2022/btt22
 BugReports: https://github.com/rstudio-conf-2022/btt22/issues
 Imports: 
@@ -27,6 +27,7 @@ Imports:
     fs,
     gert,
     ggplot2 (>= 3.3.6),
+    magrittr,
     palmerpenguins,
     purrr,
     rlang,
