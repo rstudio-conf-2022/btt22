@@ -1,3 +1,7 @@
+# btt22 0.0.8
+
+* Update treatment of `dplyr::all_of()`. (#28)
+
 # btt22 0.0.7
 
 * Add more packages to imports, so that they will be installed automatically. (#25)
