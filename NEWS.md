@@ -1,3 +1,7 @@
+# btt22 0.0.9
+
+* Update ussie templates, given benefit of practice. (#30)
+
 # btt22 0.0.8
 
 * Update treatment of `dplyr::all_of()`. (#28)
