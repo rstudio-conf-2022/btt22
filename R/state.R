@@ -17,7 +17,7 @@ btt_state <- function(pattern = "^[12]\\.") {
   candidates <-
     branch_list$name %>%
     strsplit("/") %>%                      # split (used for remotes)
-    vapply(\(x) utils::tail(x, 1), "") %>% # get last entry for each
+    vapply(function(x) utils::tail(x, 1), "") %>% # get last entry for each
     unique()
 
   # return only those candidates that satisfy the regex
